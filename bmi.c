@@ -19,6 +19,19 @@ int main(void){
 	printf("25.0 a 29.9|Sobrepeso\n");
 	printf("       >=30|Obesidad\n");
 	
+	//Codigo Modificado luego de la tabla.
+	printf("---------------------------------\n");
+	if(imc >= 30){
+		printf("Condicion: Obesidad.\n");
+	}else if(imc >= 25.0){
+		printf("Condicion: Sobrepeso.\n");
+	}else if(imc >= 18.5){
+		printf("Condicion: Normal.\n");
+	}else{
+		printf("condicion: Bajo peso.\n");
+	}
+	
+	
 	return 0;
 }
 	
