@@ -4,11 +4,26 @@ int main(void){
 	int peso;
 	float altura;
 	
-	printf("Ingrese su peso en kg:");
-	scanf("%d",&peso);
+	peso = 0;
+	altura =0;
 	
-	printf("ingrese se altura en metros:");
-	scanf("%f",&altura);
+	//Añadido del bucle para numeros negativos.
+	while(peso <= 0 || altura <= 0){
+		printf("Ingrese su peso en kg:");
+		scanf("%d",&peso);
+		if(peso > 0 || altura > 0 ){
+		printf("ingrese se altura en metros:");
+		scanf("%f",&altura);
+		}
+		if(altura <= 0){
+			printf("Error ingresar solo numeros mayores que 0 \n");
+		}else if(peso <= 0){
+			printf("Error ingresar solo numeros mayores que 0 \n");
+		}	
+	
+	}
+	//Añadido del bucle para numeros negativos.
+	
 	
 	float imc = peso / (altura * altura);
 	//
