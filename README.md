@@ -1,2 +1,2 @@
-# trabajo Informatica 1 Nro=3
+# trabajos Practicos (Informatica 1)
 Trabajos practicos ( Informática 1 ) 
