@@ -42,10 +42,17 @@ int main(void){
 	case 'A':
 		printf("\n");
 		printf("Usted a elgido Rectangulo \n");
+		do{
+		if(b < 0 || a < 0)
+		printf("Error Ingrese valores mayores que 0 \n");	
+		printf("\n");
 		printf("Ingrese la longitud del rectangulo -----> ");
 		scanf("%f",&b);
+		if(b > 0){
 		printf("Ingrese la altura del rectangulo ------> ");
 		scanf("%f",&a);
+		}
+		}while(b < 0 || a < 0);
 		controlMenu = 2;
 		calculoA = calcularAreaRectangulo(b,a);
 		imprimirResultados(calculoA,controlMenu);
@@ -59,8 +66,13 @@ int main(void){
 		controlMenu = 4;
 		printf("\n");
 		printf("Usted a elgido circulo \n");
+		do{
+		if(b < 0)
+		printf("Error Ingrese valores mayores que 0");	
+		printf("\n");
 		printf("Ingrese el radio del circulo -----> ");
 		scanf("%f",&b);
+		}while(b < 0);
 		calculoA = calcularAreaCirculo(b);
 		imprimirResultados(calculoA,controlMenu);
 		
